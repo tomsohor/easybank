@@ -1,0 +1,106 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: $grayishBlue;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Public Sans", sans-serif;
+  font-size: $font-med;
+  color: $grayishBlue;
+  line-height: 1.4; //line hieght between text
+  overflow-x: hidden;
+
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+
+// Flexbox
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+// Button
+button,
+.btn {
+  padding: 0 rem(30);
+  background: linear-gradient(to right, $limeGreen, $brightCyan);
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  color: $lightgrayishBlue;
+  font-size: $font-sm;
+  font-weight: $fontW-n7;
+  height: rem(46);
+  opacity: 1;
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+//for mobile and ipad
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+.hide-for-destop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+
+.container {
+  max-width: rem(1113);
+
+  &.m-x {
+    margin: 0 auto;
+  }
+  &.m-l {
+    margin-left: auto;
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: $darkBlue;
+  font-weight: $fontW-n3;
+}
+
+h1 {
+  font-size: $font-lg;
+}
+p {
+  font-size: $font-sm;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
