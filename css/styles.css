@@ -262,7 +262,7 @@ p {
 }
 
 .hero {
-  background-color: #fafafa;
+  background-color: red;
 }
 
 @media (min-width: 64.0625em) {
@@ -315,7 +315,7 @@ p {
     height: 40.3125rem;
     top: -20%;
     left: 5%;
-    background-image: url(images/bg-intro-desktop.svg);
+    background-image: url(/images/bg-intro-desktop.svg);
     background-position: bottom left;
     background-size: 130%;
   }
@@ -327,7 +327,7 @@ p {
   position: absolute;
   width: 95%;
   height: 85%;
-  background-image: url(images/image-mockups.png);
+  background-image: url(/images/image-mockups.png);
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
