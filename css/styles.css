@@ -262,7 +262,7 @@ p {
 }
 
 .hero {
-  background-color: red;
+  background-color: #fafafa;
 }
 
 @media (min-width: 64.0625em) {
